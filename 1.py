@@ -1,10 +1,13 @@
 
 
-def getfile():
-    file = open("1.txt")
+from commons import getfile
+
+
+def parse():
+    lines = getfile(1)
     elves = []
     index = 0
-    for line in file.readlines():
+    for line in lines:
         line = line.strip()
         if len(line) == 0:
             index += 1
@@ -15,6 +18,6 @@ def getfile():
     return elves
 
 
-elves = sorted(getfile(), reverse=True)
+elves = sorted(parse(), reverse=True)
 print(elves[0])
 print(elves[0] + elves[1] + elves[2])

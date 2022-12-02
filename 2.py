@@ -1,23 +1,7 @@
 
-def getfile():
-    file = open("2.txt")
-    lines = []
-    for line in file.readlines():
-        lines.append(line.strip())
-    return lines
 
+from commons import getfile
 
-lines = getfile()
-
-# A for Rock, B for Paper, and C for Scissors.
-# X for Rock, Y for Paper, and Z for Scissors
-# 1 Rock
-# 2 paper
-# 3 scissors
-
-# (0 if you lost,
-#  3 if the round was a draw, and
-#  6 if you won).
 
 moves1 = {
     "A X": 1+3,
@@ -32,7 +16,6 @@ moves1 = {
 }
 
 
-# X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win. Good luck!"
 moves2 = {
     "A X": 0+3,
     "B X": 0+1, 
@@ -47,7 +30,7 @@ moves2 = {
 
 score = 0
 score2= 0
-for play in getfile():
+for play in getfile(2):
     score += moves1[play]
     score2 += moves2[play]
 
