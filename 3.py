@@ -5,9 +5,6 @@ from commons import getfile
 
 lines = getfile(3)
 
-# print(ord('b')-96)
-# print(ord('B')-38)
-
 score = 0
 score2 = 0
 
