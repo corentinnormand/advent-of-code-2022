@@ -13,16 +13,16 @@ def to_set(str):
 
 
 score = 0
-score2 =0
+score2 = 0
 for line in lines:
     split_line = line.split(',')
     left = to_set(split_line[0])
     right = to_set(split_line[1])
     intersect = {x: True for x in left if x in right}
     if intersect == right or intersect == left:
-        score +=1
+        score += 1
     if len(intersect) > 0:
-        score2 +=1
+        score2 += 1
 
 print(score)
 print(score2)
