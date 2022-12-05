@@ -8,7 +8,6 @@ def parse():
     elves = []
     index = 0
     for line in lines:
-        line = line.strip()
         if len(line) == 0:
             index += 1
         else:
