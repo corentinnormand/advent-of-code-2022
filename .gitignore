@@ -1,1 +1,5 @@
 *.txt
+/scala/.bsp/
+/scala/.idea/
+/scala/target/
+/target/
