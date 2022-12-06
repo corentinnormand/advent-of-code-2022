@@ -1,5 +1,5 @@
-python/*.txt
-scala/src/main/resources/*.txt
+*.txt
+
 /scala/.bsp/
 /scala/.idea/
 /scala/target/
