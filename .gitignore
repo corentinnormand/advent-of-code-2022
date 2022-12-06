@@ -1,5 +1,8 @@
-*.txt
+python/*.txt
+scala/src/main/resources/*.txt
 /scala/.bsp/
 /scala/.idea/
 /scala/target/
 /target/
+
+
