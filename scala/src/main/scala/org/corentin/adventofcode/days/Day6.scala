@@ -20,18 +20,13 @@ object Day6 {
     functional(input, 14)
   }
 
-
   private def functional(line: String, size: Int): Int = {
-    val str = line.chars().toArray
+    line.indexOf(line.chars().toArray
       .map(i => i.asInstanceOf[Char])
       .sliding(size)
       .map(a => (a, a.toSet))
       .find(_._2.size == size)
       .map(_._1.mkString)
-      .getOrElse("")
-
-    line.indexOf(str
-    ) + size
-
+      .get) + size
   }
 }
